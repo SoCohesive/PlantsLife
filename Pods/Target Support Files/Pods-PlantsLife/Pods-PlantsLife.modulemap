@@ -1,0 +1,6 @@
+module Pods_PlantsLife {
+  umbrella header "Pods-PlantsLife-umbrella.h"
+
+  export *
+  module * { export * }
+}

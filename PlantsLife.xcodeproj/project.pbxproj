@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0EA0E2C3CDDDEAAA7B2156 /* libPods-PlantsLife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA121103CF26A1BFCCD9EC4C /* libPods-PlantsLife.a */; };
+		8C19882720B1CCAF008E995F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19882620B1CCAF008E995F /* AppDelegate.swift */; };
+		8C19882920B1CCAF008E995F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C19882820B1CCAF008E995F /* art.scnassets */; };
+		8C19882B20B1CCAF008E995F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19882A20B1CCAF008E995F /* ViewController.swift */; };
+		8C19882E20B1CCAF008E995F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C19882C20B1CCAF008E995F /* Main.storyboard */; };
+		8C19883020B1CCB0008E995F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C19882F20B1CCB0008E995F /* Assets.xcassets */; };
+		8C19883320B1CCB0008E995F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C19883120B1CCB0008E995F /* LaunchScreen.storyboard */; };
+		8C19883E20B1CCB0008E995F /* PlantsLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19883D20B1CCB0008E995F /* PlantsLifeTests.swift */; };
+		8C19884920B1CCB0008E995F /* PlantsLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19884820B1CCB0008E995F /* PlantsLifeUITests.swift */; };
+		8C19886220B1FBF9008E995F /* ActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C19886120B1FBF9008E995F /* ActionFactory.swift */; };
+		8C7A678720B26D7F0029AC2F /* SCNNode+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A678620B26D7F0029AC2F /* SCNNode+Convenience.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C19883A20B1CCB0008E995F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C19881B20B1CCAF008E995F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C19882220B1CCAF008E995F;
+			remoteInfo = PlantsLife;
+		};
+		8C19884520B1CCB0008E995F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C19881B20B1CCAF008E995F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C19882220B1CCAF008E995F;
+			remoteInfo = PlantsLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EB6EF217F241BE6A96F7EA /* Pods-PlantsLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantsLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantsLife/Pods-PlantsLife.release.xcconfig"; sourceTree = "<group>"; };
+		8C19882320B1CCAF008E995F /* PlantsLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantsLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C19882620B1CCAF008E995F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C19882820B1CCAF008E995F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		8C19882A20B1CCAF008E995F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C19882D20B1CCAF008E995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C19882F20B1CCB0008E995F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C19883220B1CCB0008E995F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C19883420B1CCB0008E995F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C19883920B1CCB0008E995F /* PlantsLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantsLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C19883D20B1CCB0008E995F /* PlantsLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsLifeTests.swift; sourceTree = "<group>"; };
+		8C19883F20B1CCB0008E995F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C19884420B1CCB0008E995F /* PlantsLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantsLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C19884820B1CCB0008E995F /* PlantsLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsLifeUITests.swift; sourceTree = "<group>"; };
+		8C19884A20B1CCB0008E995F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C19886120B1FBF9008E995F /* ActionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFactory.swift; sourceTree = "<group>"; };
+		8C7A678620B26D7F0029AC2F /* SCNNode+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Convenience.swift"; sourceTree = "<group>"; };
+		91A26EFF1488629B4AE8A0CA /* Pods-PlantsLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantsLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantsLife/Pods-PlantsLife.debug.xcconfig"; sourceTree = "<group>"; };
+		DA121103CF26A1BFCCD9EC4C /* libPods-PlantsLife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlantsLife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C19882020B1CCAF008E995F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0EA0E2C3CDDDEAAA7B2156 /* libPods-PlantsLife.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19883620B1CCB0008E995F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19884120B1CCB0008E995F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74928EBF10BE3205A1114D3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA121103CF26A1BFCCD9EC4C /* libPods-PlantsLife.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C19881A20B1CCAF008E995F = {
+			isa = PBXGroup;
+			children = (
+				8C19882520B1CCAF008E995F /* PlantsLife */,
+				8C19883C20B1CCB0008E995F /* PlantsLifeTests */,
+				8C19884720B1CCB0008E995F /* PlantsLifeUITests */,
+				8C19882420B1CCAF008E995F /* Products */,
+				A7B90993297DC3E1979DF374 /* Pods */,
+				74928EBF10BE3205A1114D3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C19882420B1CCAF008E995F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C19882320B1CCAF008E995F /* PlantsLife.app */,
+				8C19883920B1CCB0008E995F /* PlantsLifeTests.xctest */,
+				8C19884420B1CCB0008E995F /* PlantsLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C19882520B1CCAF008E995F /* PlantsLife */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A678520B26D730029AC2F /* Extension */,
+				8C19886020B1FBEE008E995F /* Factory */,
+				8C19885820B1E219008E995F /* ViewController */,
+				8C19885720B1E215008E995F /* Node */,
+				8C19885620B1E211008E995F /* View */,
+				8C19882620B1CCAF008E995F /* AppDelegate.swift */,
+				8C19882820B1CCAF008E995F /* art.scnassets */,
+				8C19882C20B1CCAF008E995F /* Main.storyboard */,
+				8C19882F20B1CCB0008E995F /* Assets.xcassets */,
+				8C19883120B1CCB0008E995F /* LaunchScreen.storyboard */,
+				8C19883420B1CCB0008E995F /* Info.plist */,
+			);
+			path = PlantsLife;
+			sourceTree = "<group>";
+		};
+		8C19883C20B1CCB0008E995F /* PlantsLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C19883D20B1CCB0008E995F /* PlantsLifeTests.swift */,
+				8C19883F20B1CCB0008E995F /* Info.plist */,
+			);
+			path = PlantsLifeTests;
+			sourceTree = "<group>";
+		};
+		8C19884720B1CCB0008E995F /* PlantsLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C19884820B1CCB0008E995F /* PlantsLifeUITests.swift */,
+				8C19884A20B1CCB0008E995F /* Info.plist */,
+			);
+			path = PlantsLifeUITests;
+			sourceTree = "<group>";
+		};
+		8C19885620B1E211008E995F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C19885720B1E215008E995F /* Node */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		8C19885820B1E219008E995F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C19882A20B1CCAF008E995F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C19886020B1FBEE008E995F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8C19886120B1FBF9008E995F /* ActionFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		8C7A678520B26D730029AC2F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A678620B26D7F0029AC2F /* SCNNode+Convenience.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7B90993297DC3E1979DF374 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A26EFF1488629B4AE8A0CA /* Pods-PlantsLife.debug.xcconfig */,
+				07EB6EF217F241BE6A96F7EA /* Pods-PlantsLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C19882220B1CCAF008E995F /* PlantsLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C19884D20B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLife" */;
+			buildPhases = (
+				F3BCFB8D4D6DB3E7887914E8 /* [CP] Check Pods Manifest.lock */,
+				8C19881F20B1CCAF008E995F /* Sources */,
+				8C19882020B1CCAF008E995F /* Frameworks */,
+				8C19882120B1CCAF008E995F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlantsLife;
+			productName = PlantsLife;
+			productReference = 8C19882320B1CCAF008E995F /* PlantsLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C19883820B1CCB0008E995F /* PlantsLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C19885020B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLifeTests" */;
+			buildPhases = (
+				8C19883520B1CCB0008E995F /* Sources */,
+				8C19883620B1CCB0008E995F /* Frameworks */,
+				8C19883720B1CCB0008E995F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C19883B20B1CCB0008E995F /* PBXTargetDependency */,
+			);
+			name = PlantsLifeTests;
+			productName = PlantsLifeTests;
+			productReference = 8C19883920B1CCB0008E995F /* PlantsLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C19884320B1CCB0008E995F /* PlantsLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C19885320B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLifeUITests" */;
+			buildPhases = (
+				8C19884020B1CCB0008E995F /* Sources */,
+				8C19884120B1CCB0008E995F /* Frameworks */,
+				8C19884220B1CCB0008E995F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C19884620B1CCB0008E995F /* PBXTargetDependency */,
+			);
+			name = PlantsLifeUITests;
+			productName = PlantsLifeUITests;
+			productReference = 8C19884420B1CCB0008E995F /* PlantsLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C19881B20B1CCAF008E995F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sonam Dhingra";
+				TargetAttributes = {
+					8C19882220B1CCAF008E995F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					8C19883820B1CCB0008E995F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8C19882220B1CCAF008E995F;
+					};
+					8C19884320B1CCB0008E995F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8C19882220B1CCAF008E995F;
+					};
+				};
+			};
+			buildConfigurationList = 8C19881E20B1CCAF008E995F /* Build configuration list for PBXProject "PlantsLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C19881A20B1CCAF008E995F;
+			productRefGroup = 8C19882420B1CCAF008E995F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C19882220B1CCAF008E995F /* PlantsLife */,
+				8C19883820B1CCB0008E995F /* PlantsLifeTests */,
+				8C19884320B1CCB0008E995F /* PlantsLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C19882120B1CCAF008E995F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C19882920B1CCAF008E995F /* art.scnassets in Resources */,
+				8C19883320B1CCB0008E995F /* LaunchScreen.storyboard in Resources */,
+				8C19883020B1CCB0008E995F /* Assets.xcassets in Resources */,
+				8C19882E20B1CCAF008E995F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19883720B1CCB0008E995F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19884220B1CCB0008E995F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3BCFB8D4D6DB3E7887914E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlantsLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C19881F20B1CCAF008E995F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C19886220B1FBF9008E995F /* ActionFactory.swift in Sources */,
+				8C19882B20B1CCAF008E995F /* ViewController.swift in Sources */,
+				8C7A678720B26D7F0029AC2F /* SCNNode+Convenience.swift in Sources */,
+				8C19882720B1CCAF008E995F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19883520B1CCB0008E995F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C19883E20B1CCB0008E995F /* PlantsLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C19884020B1CCB0008E995F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C19884920B1CCB0008E995F /* PlantsLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C19883B20B1CCB0008E995F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C19882220B1CCAF008E995F /* PlantsLife */;
+			targetProxy = 8C19883A20B1CCB0008E995F /* PBXContainerItemProxy */;
+		};
+		8C19884620B1CCB0008E995F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C19882220B1CCAF008E995F /* PlantsLife */;
+			targetProxy = 8C19884520B1CCB0008E995F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C19882C20B1CCAF008E995F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C19882D20B1CCAF008E995F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C19883120B1CCB0008E995F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C19883220B1CCB0008E995F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C19884B20B1CCB0008E995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C19884C20B1CCB0008E995F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C19884E20B1CCB0008E995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A26EFF1488629B4AE8A0CA /* Pods-PlantsLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonam.PlantsLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C19884F20B1CCB0008E995F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EB6EF217F241BE6A96F7EA /* Pods-PlantsLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonam.PlantsLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C19885120B1CCB0008E995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sonam.PlantsLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantsLife.app/PlantsLife";
+			};
+			name = Debug;
+		};
+		8C19885220B1CCB0008E995F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sonam.PlantsLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlantsLife.app/PlantsLife";
+			};
+			name = Release;
+		};
+		8C19885420B1CCB0008E995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sonam.PlantsLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlantsLife;
+			};
+			name = Debug;
+		};
+		8C19885520B1CCB0008E995F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29Q3G93Q5T;
+				INFOPLIST_FILE = PlantsLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sonam.PlantsLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlantsLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C19881E20B1CCAF008E995F /* Build configuration list for PBXProject "PlantsLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19884B20B1CCB0008E995F /* Debug */,
+				8C19884C20B1CCB0008E995F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C19884D20B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19884E20B1CCB0008E995F /* Debug */,
+				8C19884F20B1CCB0008E995F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C19885020B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19885120B1CCB0008E995F /* Debug */,
+				8C19885220B1CCB0008E995F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C19885320B1CCB0008E995F /* Build configuration list for PBXNativeTarget "PlantsLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19885420B1CCB0008E995F /* Debug */,
+				8C19885520B1CCB0008E995F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C19881B20B1CCAF008E995F /* Project object */;
+}
