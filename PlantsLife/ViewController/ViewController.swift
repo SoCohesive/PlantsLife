@@ -22,6 +22,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var selectedNode: SCNNode?
     var zDepth: Float = 0.0
     var hasDroppedOneTarget = false
+    var isMoving = false
 
     
     private let morphSlider = UISlider(frame: .zero)
@@ -36,6 +37,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     var dropTargetScene: SCNScene {
         return SCNScene(named: "art.scnassets/dropTarget.scn")!
+    }
+    
+    var beeScene: SCNScene {
+        return SCNScene(named: "art.scnassets/bee.dae")!
     }
     
     var bucketScene: SCNScene {
@@ -142,7 +147,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    
     @objc func didTap(sender: UITapGestureRecognizer) {
         guard let sceneView = sender.view as? ARSCNView else { return }
         let tapLocation = sender.location(in: sceneView)
@@ -176,11 +180,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             SCNTransaction.animationDuration = 0.5
             targetFindingNode?.geometry?.materials.first?.diffuse.contents = UIColor.red
             targetFindingNode?.opacity = CGFloat(0)
-
             
             SCNTransaction.commit()
             showBranches(on: plantBucketNode)
-            
             hasDroppedOneTarget = true
 
         }
