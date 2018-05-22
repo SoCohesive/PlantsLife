@@ -166,7 +166,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             if !didShowBunny {
             bugsBunnyNode.position =  SCNVector3(x: targetFindingNode!.position.x + 0.3, y: targetFindingNode!.position.y + 1.0, z: targetFindingNode!.position.z)
-                bugsBunnyNode.runAction(SCNAction.move(by: SCNVector3(x: 0, y: -1.0, z:0), duration: 1.0))
+                bugsBunnyNode.runAction(SCNAction.move(by: SCNVector3(x: 0, y: -1.0, z: 0), duration: 1.0))
                 sceneView.scene.rootNode.addChildNode(bugsBunnyNode)
                 didShowBunny = true
             }
