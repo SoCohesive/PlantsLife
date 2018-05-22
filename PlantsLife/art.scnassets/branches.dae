@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2018-05-22T00:10:52Z</created>
-  <modified>2018-05-22T00:10:52Z</modified>
+  <created>2018-05-22T14:24:34Z</created>
+  <modified>2018-05-22T14:24:34Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Z_UP</up_axis>
  </asset>
@@ -200,7 +200,7 @@
      </technique_common>
     </source>
     <source id="FL43Leaf7-weights">
-     <float_array id="ID17-array" count="1">0.16 </float_array>
+     <float_array id="ID17-array" count="1">-0.0304 </float_array>
      <technique_common>
       <accessor source="#ID17-array" count="1" stride="1">
        <param name="A" type="float"/>
